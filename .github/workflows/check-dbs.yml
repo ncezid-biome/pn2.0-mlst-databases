@@ -1,0 +1,20 @@
+# make a workflow called check-dbs
+name: check-dbs
+on: [push]
+
+jobs:
+  check-dbs:
+    strategy:
+      matrix:
+        db: [CAMPY, CBOT, CRONO, LISTERIA, SALM, STEC, VIBR]
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run tests
+      run: |
+        set -x
+        ls ${{ matrix.db }}/alleles_0.*
+        ls ${{ matrix.db }}/aleleleinfo.txt_0
+        ls ${{ matrix.db }}/loci.tsv
+        ls ${{ matrix.db }}/OrganismSettings.json
+        

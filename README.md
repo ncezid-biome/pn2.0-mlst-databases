@@ -6,7 +6,7 @@ These are databases for use with the PN2.0 caller.
 
 | scheme   | target | directory |
 | ------   | ------ | --------- |
-| _Campylobacter_ | _C. jejuni_, _C. coli_,  | [db/CAMPY](/db/CAMPY/) |
+| _Campylobacter_ | _C. jejuni_, _C. coli_, _C. fetus_, _C. upsaliensis_, and _C. lari_  | [db/CAMPY](/db/CAMPY/) |
 | _C. botulinum_  | _C. botulinum_           | [db/CBOT](/db/CBOT/) |
 | _Cronobacter_   | _Cronobacter_ spp.       | [db/CRONO](/db/CRONO/) |
 | _Listeria_      | _Listeria monocytogenes_ | [db/LISTERIA](/db/LISTERIA/) |

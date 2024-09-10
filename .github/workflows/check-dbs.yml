@@ -14,6 +14,6 @@ jobs:
       run: |
         set -x
         ls db/${{ matrix.db }}/alleles_0.*
-        ls db/${{ matrix.db }}/alleleleinfo.txt_0
+        ls db/${{ matrix.db }}/alleleinfo.txt_0
         ls db/${{ matrix.db }}/loci.tsv
         ls db/${{ matrix.db }}/OrganismSettings.json

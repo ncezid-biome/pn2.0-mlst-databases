@@ -25,6 +25,7 @@ More details for the files are given in subsections below the table.
 | alleles_0.* | The blast database |
 | aleleleinfo.txt_0 | A four-column file describing each allele |
 | loci.tsv | A two column file describing each locus |
+| loci/    | (optional) A directory of alternative locus labels. In the case of _Vibrio_, it shows different labels per organism. |
 | OrganismSettings.json | Description of custom settings per schema |
 
 ### alleleinfo.txt_0

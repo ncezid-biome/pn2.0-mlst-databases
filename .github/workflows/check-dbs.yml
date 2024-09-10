@@ -13,8 +13,7 @@ jobs:
     - name: Run tests
       run: |
         set -x
-        ls ${{ matrix.db }}/alleles_0.*
-        ls ${{ matrix.db }}/aleleleinfo.txt_0
-        ls ${{ matrix.db }}/loci.tsv
-        ls ${{ matrix.db }}/OrganismSettings.json
-        
+        ls db/${{ matrix.db }}/alleles_0.*
+        ls db/${{ matrix.db }}/aleleleinfo.txt_0
+        ls db/${{ matrix.db }}/loci.tsv
+        ls db/${{ matrix.db }}/OrganismSettings.json

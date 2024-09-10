@@ -1,0 +1,25 @@
+# make a workflow called check-dbs
+name: check-dbs
+on: [push]
+
+jobs:
+  check-dbs:
+    strategy:
+      matrix:
+        db: [CAMPY, CBOT, CRONO, LISTERIA, SALM, STEC, VIBR]
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check mandatory files
+      run: |
+        set -x
+        ls db/${{ matrix.db }}/alleles_0.*
+        ls db/${{ matrix.db }}/alleleinfo.txt_0
+        ls db/${{ matrix.db }}/loci.tsv
+        ls db/${{ matrix.db }}/OrganismSettings.json
+    - name: Check optional files
+      run: |
+        set -x
+        ls db/${{ matrix.db }}/alleles.fasta.gz || true
+        ls -a db/${{ matrix.db }}/loci || true
+        

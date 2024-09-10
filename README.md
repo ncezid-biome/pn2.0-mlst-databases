@@ -17,13 +17,14 @@ These are databases for use with the PN2.0 caller.
 ## Database structure
 
 An MLST database has several standard files in a directory.
+More details for the files are given in subsections below the table.
 
 | filename | description |
 | -------- | ----------- |
 | alleles.fasta.gz | (optional) A compressed fasta file of all entries in the blast database |
 | alleles_0.* | The blast database |
-| aleleleinfo.txt_0 | A four-column file describing each allele in the database as described below |
-| loci.tsv | A two column file describing each locus as described below |
+| aleleleinfo.txt_0 | A four-column file describing each allele |
+| loci.tsv | A two column file describing each locus |
 | OrganismSettings.json | Description of custom settings per schema |
 
 ### alleleinfo.txt_0
@@ -62,7 +63,7 @@ SALM_9998       accessory
 SALM_9999       accessory
 ```
 
-### organismSettings.json
+### OrganismSettings.json
 
 Example:
 

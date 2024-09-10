@@ -4,15 +4,15 @@ These are databases for use with the PN2.0 caller.
 
 ## Databases
 
-| scheme   | directory |
-| ------   | --------- |
-| _Campylobacter_ | [db/CAMPY](/db/CAMPY/) |
-| _C. botulinum_  | [db/CBOT](/db/CBOT/) |
-| _Cronobacter_   | [db/CRONO](/db/CRONO/) |
-| _Listeria monocytogenes_ | [db/LISTERIA](/db/LISTERIA/) |
-| _Salmonella enterica_    | [db/SALM](/db/SALM/) |
-| Shiga toxin producing _E. coli_ | [db/STEC](/db/STEC/) |
-| _Vibrio_        | [db/VIBR](/db/VIBR/) |
+| scheme   | target | directory |
+| ------   | ------ | --------- |
+| _Campylobacter_ | _C. jejuni_, _C. coli_,  | [db/CAMPY](/db/CAMPY/) |
+| _C. botulinum_  | _C. botulinum_           | [db/CBOT](/db/CBOT/) |
+| _Cronobacter_   | _Cronobacter_ spp.       | [db/CRONO](/db/CRONO/) |
+| _Listeria_      | _Listeria monocytogenes_ | [db/LISTERIA](/db/LISTERIA/) |
+| _Salmonella_    | _Salmonella_ spp.        | [db/SALM](/db/SALM/) |
+| STEC            | _Escherichia_, especially Shiga toxin producing _E. coli_ or _Shigella_ | [db/STEC](/db/STEC/) |
+| _Vibrio_        | _V. cholerae_, _V. vulnificus_, and _V. parahaemolyticus_ | [db/VIBR](/db/VIBR/) |
 
 ## Database structure
 
